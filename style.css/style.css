@@ -1,0 +1,59 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --color-alura: #051932;
+  --color-pomb-and-power: #7C5E99;
+  --color-floral-white: #FFFCEE;
+  --color-fiery-rose: #f25a70;
+  --color-sandstorm: #f5d339;
+
+
+}
+h2, h3{
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: var(--color-sandstorm);
+  width: 100%;
+  display: flex;
+}
+
+button {
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-perfil {
+  width: 500px;
+}
