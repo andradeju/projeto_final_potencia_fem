@@ -4,12 +4,16 @@
   font-weight: 400;
   --color-alura: #051932;
   --color-pomb-and-power: #7C5E99;
-  --color-floral-white: #FFFCEE;
+  --color-floral-white: #ffffff;
   --color-fiery-rose: #f25a70;
-  --color-sandstorm: #f5d339;
-
-
+  --color-sandstorm: #fbd013;
 }
+
+h1 {
+  color: var(--color-sandstorm);
+  font-weight: bolder;
+}
+
 h2, h3{
   text-align: center;
 }
@@ -22,8 +26,7 @@ ul {
 }
 
 body {
-  margin: 0;  
-  padding: 0;
+  margin: 0 auto;  
   box-sizing: border-box;
 }
 
@@ -31,29 +34,76 @@ body {
   background-color: var(--color-sandstorm);
   width: 100%;
   display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  display: inline-block;
+}
+
+.menu {
+  color: var(--color-floral-white);
+  font-weight: lighter;
+  display: inline;
+  padding: 12px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-form {
+  padding: 12px;
+  align-items: center;
+}
+
+input {
+  border-radius: 12px;
+  padding: 5px;
+  border: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-lupa {
+  align-items: center;
+  justify-content: center;
+}
+
+.img-lupa {
+  align-items: center;
+  justify-content: center;
+  width: 18px;
 }
 
 button {
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  background-color: var(--color-sandstorm);
+  border: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .perfil {
   display: flex;
-  justify-content: center;
   align-items: center;
+  
+}
+
+.infos {
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .img-perfil {
-  width: 500px;
+  width: 450px;
+  border-radius: 10px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0, 1);
 }
