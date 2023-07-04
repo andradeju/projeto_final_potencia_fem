@@ -14,9 +14,6 @@ h1 {
   font-weight: bolder;
 }
 
-h2, h3{
-  text-align: center;
-}
 a {
   text-decoration: none;
 }
@@ -66,20 +63,17 @@ input {
 .btn-lupa {
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  background-color: var(--color-sandstorm);
+  border: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-lupa {
   align-items: center;
   justify-content: center;
   width: 18px;
-}
-
-button {
-  cursor: pointer;
-  background-color: var(--color-sandstorm);
-  border: none;
-  justify-content: center;
-  align-items: center;
 }
 
 .perfil {
@@ -101,9 +95,40 @@ button {
 }
 
 .card {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-container {
   width: 300px;
   border: 1px solid;
   border-radius: 8px;
   padding: 16px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0, 1);
 }
+
+.section-quiz {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 22px;
+  align-items: center;
+}
+
+.intro-quiz {
+  flex-direction: column;
+}
+
+.img-intro-quiz {
+  width: 500px;
+  height: 350px;
+  border-radius: 10px;
+  margin-top: 22px;
+}
+
+
+.btn-intro-quiz {
+  cursor: pointer;
+  background-color: var(--color-sandstorm);
+  border-radius: 8px;
+}
+
