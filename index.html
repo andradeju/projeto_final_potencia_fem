@@ -17,29 +17,27 @@
     </form>
     <nav>
       <ul>
-        <li class="menu"><a href="#"></a>Sobre</li>
-        <li class="menu"><a href=""></a>Carreira</li>
-        <li class="menu"><a href=""></a>Linhas de pesquisa</li>
+        <li class="menu"><a href="#sobre">Sobre</a></li>
+        <li class="menu"><a href="#carreira">Carreira</a></li>
+        <li class="menu"><a href="#pesquisas">Linhas de pesquisa</a></li>
       </ul>
     </nav>
   </header>
-
   <main>
     <div class="carousel">
-      <ul>
-        <li class="slide">
-          <img src="./assets/images/maxresdefault.jpg" alt="">
-        </li>
-        <li class="slide">
-          <img src="" alt="">
-        </li>
-        <li class="slide">
-          <img src="" alt="">
-        </li>
-        
-
-      </ul>
+      <div class="slides">
+        <ul>
+          <li class="slide">
+            <img class="img-carousel" src="./assets/images/maxresdefault.jpg" alt="">
+          </li>
+          <li class="slide">
+            <img class="img-carousel" src="./assets/images/Sonia-Guimaraes-ca.jpg" alt="">
+          </li>
+        </ul>
+      </div>
     </div>
+    <a class="prev" onclick="prevSlide()">&#10094;</a>
+    <a class="next" onclick="nextSlide()">&#10095;</a>
     <div class="perfil">
       <img class="img-perfil" src="./assets/images/sonia-guimaraes.jpg" alt="">
       <div class="infos">
@@ -47,76 +45,79 @@
         <p>Professora Associada do ITA, PhD em Materiais Eletrônicos, Mestre em Física.</p>
         <p>Departamento de Ciência e Tecnologia Aeroespacial</p>
         <p>Ativista na luta contra o racismo e discriminação de gênero. Na causa, é envolvida em comissões e projetos que tratem sobre a inclusão de negros na ciência e na academia. Além de fazer parte de ações de promoção pela presença feminina nesses espaços.</p>
-          <a href="">
+          <a href="https://www.linkedin.com/in/sonia-guimaraes/">
             <img class="icone" src="./assets/icons/iconmonstr-linkedin-3.svg" alt="">
           </a>
           <a href="">
             <img src="./assets/icons/iconmonstr-instagram-13.svg" alt="">
           </a>
-          <a href="">
-            <img src="" alt="">
-          </a>
       </div>
     </div>
-    <section>
+    <section id="sobre">
       <h2>Sobre</h2>
       <p>Sonia Guimarães (São Paulo, 20 de junho de 1957) é uma física, pesquisadora e professora universitária brasileira.
-        Guimarães nasceu em São Paulo, capital do Estado, em 1957, filha de pai tapeceiro e uma comerciante, dona de um buffet. Estudante de escola pública, era uma aluna bastante aplicada e uma das melhores da classe, com notas altas, especialmente em matemática. Na adolescência, trabalhava para poder pagar um cursinho e prestar vestibular para engenharia civil. Quando não conseguia pagar integralmente o valor do cursinho, sua mãe ajudava.
+        Guimarães nasceu em São Paulo, capital do Estado, em 1957, filha de pai tapeceiro e uma comerciante, dona de um buffet. Estudante de escola pública, era uma aluna bastante aplicada e uma das melhores da classe, com notas altas, especialmente em matemática. Na adolescência, trabalhava para poder pagar um cursinho e prestar vestibular para engenharia civil. Quando não conseguia pagar integralmente o valor do cursinho, sua mãe ajudava.<br>
         Um de seus professores, porém, a orientou a buscar os cursos menos concorridos, o que a levou a escolher a física. Quando já estava cursando Física na Universidade Federal de São Carlos, Guimarães chegou a prestar vestibular para engenharia, mas as aulas sobre materiais sólidos acabaram agradando a estudante, que permaneceu na Física. De 50 alunos em sua sala, apenas cinco eram mulheres. Guimarães foi a primeira pessoa da família a entrar para a faculdade.
         <div class="video-perfil">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/9XQcFaWb6r4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </p>
     </section>
-    <section>
+    <section id="carreira">
       <h2>Carreira</h2>
-      <p>Graduou-se com licenciatura plena em ciências em 1979 e de 1980 a 1983, fez mestrado em Física Aplicada pela Universidade Federal de São Carlos, com a dissertação Desenvolvimento da Técnica Elipsométrica para Caracterização Ótica de Filmes Finos. Em 1986 especializou-se em Química e Tecnologia dos Materiais e dos Componentes. Em 1986, após um breve período de pesquisa no Istituto LAMEL do CNR em Bologna, na Itália, ingressou no doutorado em materiais eletrônicos pelo Instituto de Ciência e Tecnologia, da Universidade de Manchester, na Inglaterra, trabalhando com microscopia eletrônica de varredura. Especialista na área de semicondutores, Guimarães liderava em 2016 uma pesquisa nacional sobre o desenvolvimento de sensores de calor.
-        Em 1993, ingressou como docente do Instituto Tecnológico de Aeronáutica (ITA), sendo a primeira negra da instituição, que contava e ainda conta com um reduzido quadro de mulheres docentes. A instituição só passou a aceitar mulheres no vestibular nos anos 1990. Defensora da presença de mulheres na área de Exatas e no próprio ITA, as mulheres ainda são minoria na instituição. Dos 700 alunos que ingressaram no ITA entre 2013 e 2018, apenas 60 eram mulheres.
+      <p>Graduou-se com licenciatura plena em ciências em 1979 e de 1980 a 1983, fez mestrado em Física Aplicada pela Universidade Federal de São Carlos, com a dissertação Desenvolvimento da Técnica Elipsométrica para Caracterização Ótica de Filmes Finos. Em 1986 especializou-se em Química e Tecnologia dos Materiais e dos Componentes. Em 1986, após um breve período de pesquisa no Istituto LAMEL do CNR em Bologna, na Itália, ingressou no doutorado em materiais eletrônicos pelo Instituto de Ciência e Tecnologia, da Universidade de Manchester, na Inglaterra, trabalhando com microscopia eletrônica de varredura. Especialista na área de semicondutores, Guimarães liderava em 2016 uma pesquisa nacional sobre o desenvolvimento de sensores de calor.<br>
+        Em 1993, ingressou como docente do Instituto Tecnológico de Aeronáutica (ITA), sendo a primeira negra da instituição, que contava e ainda conta com um reduzido quadro de mulheres docentes. A instituição só passou a aceitar mulheres no vestibular nos anos 1990. Defensora da presença de mulheres na área de Exatas e no próprio ITA, as mulheres ainda são minoria na instituição. Dos 700 alunos que ingressaram no ITA entre 2013 e 2018, apenas 60 eram mulheres.<br><br>
         
-        “	É uma instituição conservadora, masculina e branca. Mas aos poucos estamos ganhando espaço. Isso tudo era restrito e anos de exclusão são revertidos aos poucos.
-        Mantenedora da Faculdade Zumbi dos Palmares, Guimarães trabalha com projetos que envolvem estudantes de áreas carentes e marginalizadas e em projetos feministas, que visem à maior inclusão de mulheres e negros no ambiente acadêmico a fim de reduzir a disparidade racial e de gênero na pesquisa brasileira. Dados do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) de 2015 apontam que apenas 12 mil mulheres estavam em pesquisa acadêmica nas áreas de tecnologia, engenharia e exata, contra quase 23 mil homens. Dados do mesmo ano apontam que as mulheres negras são apenas 26% das mulheres pesquisadoras do Brasil.
+        "É uma instituição conservadora, masculina e branca. Mas aos poucos estamos ganhando espaço. Isso tudo era restrito e anos de exclusão são revertidos aos poucos."<br><br>
+        Mantenedora da Faculdade Zumbi dos Palmares, Guimarães trabalha com projetos que envolvem estudantes de áreas carentes e marginalizadas e em projetos feministas, que visem à maior inclusão de mulheres e negros no ambiente acadêmico a fim de reduzir a disparidade racial e de gênero na pesquisa brasileira. Dados do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) de 2015 apontam que apenas 12 mil mulheres estavam em pesquisa acadêmica nas áreas de tecnologia, engenharia e exata, contra quase 23 mil homens. Dados do mesmo ano apontam que as mulheres negras são apenas 26% das mulheres pesquisadoras do Brasil.<br><br>
 
-        “	Eu sei dos números que eu represento e quero que outras mulheres olhem para mim e vejam que é possível. Eu combato todos os dias um cenário que contrasta de mim só por estar aqui, mas eu quero mais que isso. Precisamos entender que todos os ambientes são nossos e lutar uns pelos outros.[4]	”
+        “	Eu sei dos números que eu represento e quero que outras mulheres olhem para mim e vejam que é possível. Eu combato todos os dias um cenário que contrasta de mim só por estar aqui, mas eu quero mais que isso. Precisamos entender que todos os ambientes são nossos e lutar uns pelos outros.”<br><br>
         Em 2017 foi criado dentro do Instituto de Física da Universidade de São Paulo, o Coletivo Negro Sonia Guimarães, que visa ser um ambiente de acolhimento a estudantes negros da instituição.</p>
-        
     </section>
-    <section>
+    <section id="pesquisas">
       <h2>Linhas de pesquisa</h2>
       <div class="card">
         <div class="card-container">
-          <p>Química Teórica</p>
-          <p>Propriedade Eletróticas de Ligas Semicondutoras Crescidas Epitaxialmente</p>
+          <img src="./assets/icons/iconmonstr-school-18.svg" alt="logo quimica">
+        <li class="txt-card">Química Teórica</li>
+          <li class="txt-card">Propriedade Eletróticas de Ligas Semicondutoras Crescidas Epitaxialmente</li>
           </div>
         <div class="card-container">
-          <p>Estrutura de Camadas Epitaxiais</p>
-          <p>Estruturas Eletrônicas e Propriedades Elétricas de Superfícies</p>
+          <img src="./assets/icons/iconmonstr-school-18.svg" alt="logo quimica">
+          <li class="txt-card">Estrutura de Camadas Epitaxiais</li>
+          <li class="txt-card">Estruturas Eletrônicas e Propriedades Elétricas de Superfícies</li>
           </div>
         <div class="card-container">
-          <p>Tratamento Químico de Superfícies</p>
-          <p>Caracterização de Detetores de Radiação Infravermelha</p>
+          <img src="./assets/icons/iconmonstr-school-18.svg" alt="logo quimica">
+          <li class="txt-card">Tratamento Químico de Superfícies</li>
+          <li class="txt-card">Caracterização de Detetores de Radiação Infravermelha</li>
       </div>
       </div>
     </section>
     <section class="section-quiz">
       <div class="intro-quiz">
-        <h2 class="txt-intro-quiz">Que tal testar seus conhecimentos sobre Sonia Guimarães?</h2>
-        <button class="btn-intro-quiz">Clique aqui para iniciar um Quiz</button>
+        <h3 class="txt-intro-quiz">Que tal testar seus conhecimentos sobre Sonia Guimarães?</h3>
+        <button class="btn-intro-quiz">Iniciar Quiz</button>
       </div>
           <img class="img-intro-quiz" src="./assets/images/sonia-guimaraes.jpg" alt="">
     </section>
-    <article>
+    <article class="mais-sobre">
       <h3>Conheça mais sobre Sonia Guimarães</h3>
-      <ul>
-        <li><a href="https://sbfisica.org.br/v1/sbf/elas-estao-vindo-sonia-guimaraes-sobre-mulheres-e-meninas-nas-ciencias/">“Elas estão vindo”: Sônia Guimarães sobre Mulheres e Meninas nas Ciências</a></li>
-        <li><a href="https://exame.com/brasil/sonia-guimaraes-a-primeira-mulher-negra-a-ser-doutora-em-fisica-no-brasil/">Sonia Guimarães: a primeira mulher negra a ser doutora em física no Brasil</a></li>
-        <li><a href="https://www.fundacaotelefonicavivo.org.br/noticias/sonia-guimaraes-mesmo-com-adversidades-mulheres-estao-chegando-na-ciencia/">Sônia Guimarães: “Mesmo com adversidades, mulheres estão chegando na ciência”</a></li>
-      <a href="https://bv.fapesp.br/pt/pesquisador/7111/sonia-guimaraes/">Biblioteca Virtual da FAPESP | Sonia Guimaraes</a>
-
+      <ul class="cont-um">
+        <li><a class="conteudo-sonia" href="https://sbfisica.org.br/v1/sbf/elas-estao-vindo-sonia-guimaraes-sobre-mulheres-e-meninas-nas-ciencias/">“Elas estão vindo”: Sônia Guimarães sobre Mulheres e Meninas nas Ciências</a></li>
+        <li><a class="conteudo-sonia" href="https://exame.com/brasil/sonia-guimaraes-a-primeira-mulher-negra-a-ser-doutora-em-fisica-no-brasil/">Sonia Guimarães: a primeira mulher negra a ser doutora em física no Brasil</a></li>
+        <li><a class="conteudo-sonia" href="https://www.fundacaotelefonicavivo.org.br/noticias/sonia-guimaraes-mesmo-com-adversidades-mulheres-estao-chegando-na-ciencia/">Sônia Guimarães: “Mesmo com adversidades, mulheres estão chegando na ciência”</a></li>
+      </ul>
+      <ul class="cont-um">
+        <li><a class="conteudo-sonia" href="https://primeirosnegros.com/fisica-sonia-guimaraes-a-primeira-professora-negra-do-ita/">Doutora em Física Sonia Guimarães, a primeira professora negra do ITA</a></li>
+        <li><a class="conteudo-sonia" href="https://habitability.com.br/sonia-guimaraes-o-futuro-da-ciencia-e-ancestral-e-africano/">Sonia Guimarães: o futuro da ciência é ancestral e africano</a></li>
+        <li><a class="conteudo-sonia" href="https://bv.fapesp.br/pt/pesquisador/7111/sonia-guimaraes/">Biblioteca Virtual da FAPESP | Sonia Guimaraes</a></li>
       </ul>
     </article>
   </main>
   <footer>
-    <span>&COPY;</span>
+    <span>&copy;Todos os direitos reservados.</span>
   </footer>
+  <script src="./index.js"></script>
 </body>
 </html>
