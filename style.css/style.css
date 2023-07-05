@@ -27,11 +27,13 @@ ul {
   list-style: none;
 }
 
+
 body {
   margin: 0 auto;  
   box-sizing: border-box;
-  height: 100vh;
   padding: 0;
+  min-height: 100vh;
+  height: 100%;
 }
 
 section {
@@ -41,11 +43,29 @@ section {
 p {
   text-align: justify;
 }
+
 .header {
   background-color: var(--color-sandstorm);
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+.header-quiz{
+  background-color: var(--color-sandstorm);
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  
+}
+
+.home-quiz {
+  font-weight: bold;
+  padding: 18px;
+}
+
+.nav-quiz{
+  padding: 14px;
 }
 
 .links {
@@ -141,6 +161,7 @@ input {
 .perfil {
   display: flex;
   align-items: center;
+  padding: 22px;
 }
 
 .img-perfil {
@@ -148,6 +169,16 @@ input {
   border-radius: 10px;
   margin-right: 16px;
   margin-left: 16px;
+}
+
+.video-perfil{
+  padding: 20px;
+  text-align: center;
+}
+
+.desc-video {
+  margin-top: 0;
+  text-align: center;
 }
 
 .card {
@@ -159,7 +190,7 @@ input {
   width: 350px;
   border: 1px solid;
   border-radius: 8px;
-  padding: 16px;
+  padding: 22px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0, 1);
   background-color: var(--color-pomb-and-power);
 }
@@ -167,8 +198,35 @@ input {
 .txt-card {
   color: var(--color-floral-white);
   font-weight: bold;
+  text-align: left;
 }
 
+.img-quiz{
+  width: 100%;
+  height: auto;
+}
+
+.img-card {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#quiz {
+  margin-top: 12px;
+  width: 100%;
+}
+
+.card-quiz {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
 
 .section-quiz {
   display: flex;
@@ -176,6 +234,7 @@ input {
   margin-top: 22px;
   align-items: center;
 }
+
 
 .intro-quiz {
   flex-direction: column;
@@ -227,38 +286,35 @@ footer {
   display: flex;
 }
 
-@media screen and (max-width: 768px) {
-  .header {
-    flex-direction: column;
-  }
 
-  .menu {
-    display: none;
-  }
-
-  .search-form {
-    margin-top: 10px;
-  }
-
-  .img-lupa {
-    width: 14px;
-  }
-
-  .img-carousel {
-    width: 100%;
-    height: auto;
-  }
-
-  .img-intro-quiz {
-    width: 100%;
-    height: auto;
-  }
-
-  .card-container {
-    width: 100%;
-  }
-
-  .txt-intro-quiz {
-    font-size: large;
-  }
+.btn-quiz {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--color-floral-white);
+  padding: 0.8rem 1rem;
+  background: var(--color-sandstorm);
+  border-radius: 2rem;
+  border: none;
 }
+
+.btn-quiz:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(224, 244, 5) 0%,
+    rgb(182, 245, 8) 100%
+  );
+}
+
+.img-quiz {
+  max-width: 100%;
+  width: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+#quiz {
+  text-align: center;
+  max-width: 500px;
+}
+

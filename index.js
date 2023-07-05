@@ -27,3 +27,7 @@ function nextSlide() {
 
 mostrarSlide(slideIndex);
 
+function redirecionarQuiz() {
+  window.location.href = "./quiz.html"
+}
+
