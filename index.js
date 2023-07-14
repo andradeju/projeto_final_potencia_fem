@@ -1,33 +1,41 @@
+// Variáveis globais
 let slideIndex = 0;
 const slides = document.getElementsByClassName("slide");
 
-function mostrarSlide(index) {
-  if (index < 0) {
-    slideIndex = slides.length - 1;
-  } else if (index >= slides.length) {
-    slideIndex = 0;
-  }
-
+// Função para mostrar o slide atual
+function showSlide() {
+  // Oculta todos os slides
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-
-  slides[slideIndex].style.display = "block";
+  // Exibe o slide atual
+  slides[slideIndex].style.display = "flex";
 }
 
-function prevSlide() {
-  slideIndex--;
-  mostrarSlide(slideIndex);
-}
-
+// Função para avançar para o próximo slide
 function nextSlide() {
   slideIndex++;
-  mostrarSlide(slideIndex);
+  // Volta ao primeiro slide se atingir o final
+  if (slideIndex >= slides.length) {
+    slideIndex = 0;
+  }
+  showSlide();
 }
 
-mostrarSlide(slideIndex);
+// Função para voltar ao slide anterior
+function prevSlide() {
+  slideIndex--;
+  // Vai para o último slide se estiver no início
+  if (slideIndex < 0) {
+    slideIndex = slides.length - 1;
+  }
+  showSlide();
+}
+
+// Exibe o slide inicial ao carregar a página
+showSlide();
+
 
 function redirecionarQuiz() {
   window.location.href = "./quiz.html"
 }
-

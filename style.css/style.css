@@ -36,12 +36,16 @@
   }
   
   section {
-  padding: 3.4vw;
+  padding: 2vw;
   }
   
   p {
   text-align: justify;
-  position: relative !important;
+  margin: 0 auto;
+  }
+
+  #pesquisas, #carreira, #sobre, .perfil {
+    border: 1px solid #ccc;
   }
   
   .header {
@@ -92,30 +96,31 @@
   }
   
   .carousel {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
   }
-  
-  .img-carousel {
-  max-width: 998px;
-  height: auto;
-  margin: 0 auto;
-  }
-  
-  .slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  }
+
+  .slides-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    }
   
   .slide {
-  width: 100%;
-  flex-shrink: 0;
-  justify-content: center;
-  display: flex;
+    display: flex;
+    padding: 2.7vw;
+    }
+
+  .img-carousel {
+    max-width: 980px;
+    margin: 0 auto;
+    display: block;
   }
+
   
   .prev,
   .next {
@@ -124,9 +129,11 @@
   transform: translateY(-50%);
   background-color: var(--color-pomb-and-power);
   color: #fff;
-  padding: 1vw;
+  padding: 1.2vw;
   cursor: pointer;
   text-decoration: none;
+  text-align: center;
+  border: none;
   }
   
   .prev {
@@ -138,8 +145,12 @@
   }
   
   .infos {
-  flex-direction: column;
+  align-items: center;
   margin-bottom: 5vw;
+  }
+
+  .infos p {
+    margin-bottom: 1vw;
   }
   
   .perfil {
@@ -165,7 +176,7 @@
   margin-top: 0;
   text-align: center;
   }
-  
+
   .card {
   display: flex;
   justify-content: center;
@@ -219,6 +230,7 @@
   justify-content: space-around;
   margin-top: 2.2vw;
   align-items: center;
+  border: 1px solid #ccc;
   }
   
   .intro-quiz {
@@ -258,8 +270,10 @@
   
   .mais-sobre {
   text-align: center;
+  border: 1px solid #ccc;
+  padding: 1vw;
   }
-  
+
   .conteudo-sonia {
   color: #03080e;
   }
@@ -269,10 +283,32 @@
   }
   
   footer {
-  background-color: var(--color-sandstorm);
-  width: 100%;
-  display: flex;
+    background-color: var(--color-sandstorm);
+    width: 100%;
+    display: flex;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
   }
+  
+  footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  footer span {
+    float: right;
+  }
+
 
   .home-quiz {
     font-weight: bold;
