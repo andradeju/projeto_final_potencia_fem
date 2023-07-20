@@ -211,20 +211,6 @@
   margin-bottom: 2vw;
   }
   
-  #quiz {
-  margin-top: 1.2vw;
-  width: 100%;
-  }
-  
-  .card-quiz {
-  padding: 2vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  }
-  
   .section-quiz {
   display: flex;
   justify-content: space-around;
@@ -309,11 +295,13 @@
     float: right;
   }
 
-
+/*   page quiz
+ */
   .home-quiz {
     font-weight: bold;
     padding: 0.5vw;
     align-items: center;
+    width: 100%;
     }
 
   .header-quiz {
@@ -326,6 +314,7 @@
   .nav-quiz {
       padding: 1vw;
     }
+
   
   .btn-quiz {
   font-weight: bold;
@@ -353,9 +342,37 @@
   align-items: center;
   }
   
+  .intro-quiz {
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-quiz {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+  }
+
   #quiz {
+  padding: 2vw;
+  max-width: 70vw;
+  min-height: auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 1vw;
+  margin: 0 auto;  
+  width: 100%;
   text-align: center;
-  max-width: 50vw;
+  }
+
+  .pag-end {
+    text-align: center;
+    margin-top: 2vw;
   }
   
   @media (max-width: 768px) {

@@ -14,65 +14,70 @@
         <a class="home-quiz" onclick="redirecionarHome()" href="#">Home</a>
     </nav>
   </header>
-  <div class="card-quiz">
+    <div class="intro-quiz">
     <img class="img-card" src="./assets/images/sonia-guimaraes.jpg" alt="">
     <h1>Quiz</h1>
+    </div>
+  <div class="content-quiz">
     <div id="quiz">
-      <h2>Pergunta 1:</h2>
-        <p>Onde nasceu Sonia Guimarães?</p>
-        <ul>
-          <li>
-            <input type="radio" name="pergunta1" value="a">
-            <label for="a">São Paulo</label>
-          </li>
-          <li>
-            <input type="radio" name="pergunta1" value="b">
-            <label for="b">Rio de Janeiro</label>
-          </li>
-          <li>
-            <input type="radio" name="pergunta1" value="b">
-            <label for="b">Salvador</label>
-          </li>
-          </ul>
+        <h2>Pergunta 1:</h2>
+          <h3>Onde nasceu Sonia Guimarães?</h3>
+          <ul>
+            <li>
+              <input type="radio" name="pergunta1" value="a">
+              <label for="a">São Paulo</label>
+            </li>
+            <li>
+              <input type="radio" name="pergunta1" value="b">
+              <label for="b">Rio de Janeiro</label>
+            </li>
+            <li>
+              <input type="radio" name="pergunta1" value="b">
+              <label for="b">Salvador</label>
+            </li>
+            </ul>
     </div>
     <div id="quiz">
-      <h2>Pergunta 2:</h2>
-      <p>O que motivou Sonia Guimarães a escolher a física como curso universitário?</p>
+        <h2>Pergunta 2:</h2>
+        <h3>O que motivou Sonia Guimarães a escolher a física como curso universitário?</h3>
+        <ul>
+          <li>
+            <input type="radio" name="pergunta2" value="a">
+            <label for="a">As aulas sobre materiais sólidos durante seu curso de engenharia</label>
+          </li>
+          <li>
+            <input type="radio" name="pergunta2" value="b">
+            <label for="b">O incentivo de seus colegas de sala na universidade</label>
+          </li>
+          <li>
+            <input type="radio" name="pergunta2" value="c">
+            <label for="c">O conselho de um de seus professores para buscar cursos menos concorridos</label>
+          </li>
+    </div>
+    <div id="quiz">
+      <h2>Pergunta 3:</h2>
+      <h3>Qual foi o tema da dissertação de mestrado de Sonia Guimarães?</h3>
       <ul>
-        <li>
-          <input type="radio" name="pergunta2" value="a">
-          <label for="a">As aulas sobre materiais sólidos durante seu curso de engenharia</label>
+        <li class="opcoes-quiz">
+          <input type="radio" name="pergunta3" value="a">
+          <label for="a">Caracterização ótica de filmes finos</label>
         </li>
-        <li>
-          <input type="radio" name="pergunta2" value="b">
-          <label for="b">O incentivo de seus colegas de sala na universidade</label>
+        <li class="opcoes-quiz">
+          <input type="radio" name="pergunta3" value="b">
+          <label for="b">Microscopia eletrônica de varredura</label>
         </li>
-        <li>
-          <input type="radio" name="pergunta2" value="c">
-          <label for="c">O conselho de um de seus professores para buscar cursos menos concorridos</label>
+        <li class="opcoes-quiz">
+          <input type="radio" name="pergunta3" value="c">
+          <label for="c">Desenvolvimento de sensores de calor</label>
         </li>
+    </div>
   </div>
-  <div id="quiz">
-    <h2>Pergunta 3:</h2>
-    <p>Qual foi o tema da dissertação de mestrado de Sonia Guimarães?</p>
-    <ul>
-      <li>
-        <input type="radio" name="pergunta3" value="a">
-        <label for="a">Caracterização ótica de filmes finos</label>
-      </li>
-      <li>
-        <input type="radio" name="pergunta3" value="b">
-        <label for="b">Microscopia eletrônica de varredura</label>
-      </li>
-      <li>
-        <input type="radio" name="pergunta3" value="c">
-        <label for="c">Desenvolvimento de sensores de calor</label>
-      </li>
-</div>
-<button class="btn-quiz">Submit</button>
+  <div class="pag-end">
+    <button class="btn-quiz">Resultado</button>
   <footer>
     <span>&copy;Todos os direitos reservados.</span>
   </footer>
+</div>
   <script src="./quiz.js"></script>
 </body>
 </html>
