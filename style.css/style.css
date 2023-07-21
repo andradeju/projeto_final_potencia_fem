@@ -2,10 +2,10 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  --color-alura: #051932;
-  --color-pomb-and-power: #88B053E6;
+  --color-blue: #051932;
+  --color-pomb-and-power: #268744;
   --color-floral-white: #ffffff;
-  --color-sandstorm: #fbd013;
+  --color-sandstorm: #f8c90f;
   }
   
   h1 {
@@ -28,22 +28,17 @@
   }
   
   body {
-  margin: 0 auto;
+  margin: 0;
   box-sizing: border-box;
   padding: 0;
-  min-height: 100vh;
-  height: 100%;
+  width: 100%;
+  
   }
   
   section {
-  padding: 2vw;
+  padding: 1vw;
   }
   
-  p {
-  text-align: justify;
-  margin: 0 auto;
-  }
-
   #pesquisas, #carreira, #sobre, .perfil {
     border: 1px solid #ccc;
   }
@@ -51,6 +46,7 @@
   .header {
   background-color: var(--color-sandstorm);
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   }
@@ -63,9 +59,10 @@
   color: var(--color-floral-white);
   font-weight: lighter;
   display: inline;
-  padding: 1.2vw;
+  padding: 1vw;
   align-items: center;
   cursor: pointer;
+  width: 100%;
   }
   
   .search-form {
@@ -160,16 +157,16 @@
   }
   
   .img-perfil {
-  width: 36vw;
+  width: 34vw;
   border-radius: 1vw;
   margin-right: 1.6vw;
   margin-left: 1.6vw;
   }
-  
+
+
   .video-perfil {
   padding: 2vw;
   text-align: center;
-  justify-content: center;
   }
   
   .desc-video {
@@ -177,50 +174,59 @@
   text-align: center;
   }
 
+  .img-arte{
+    text-align: center;
+  }
+
+  .sonia-arte{
+    width: 26vw;
+  }
+
+  .italico {
+    font-style: italic;
+    font-weight: 400;
+  }
   .card {
   display: flex;
   justify-content: center;
+  gap: 2vw;
   }
 
   .card-container {
-  width: 35vw;
+  width: 90%;
   border: 1px solid;
   border-radius: 0.8vw;
-  padding: 2.2vw;
-  margin-right: 2vw;
+  padding: 1.6vw;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0, 1);
   background-color: var(--color-pomb-and-power);
+  text-align: center;
   }
   
   .txt-card {
   color: var(--color-floral-white);
   font-weight: bold;
-  text-align: left;
-  }
-  
-  .img-quiz {
-  width: 100%;
-  height: auto;
+  list-style: none;
   }
   
   .img-card {
-  width: 20vw;
-  height: 20vw;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 2vw;
-  }
-  
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 50%;
+    }
+    
   .section-quiz {
   display: flex;
   justify-content: space-around;
   margin-top: 2.2vw;
-  align-items: center;
   border: 1px solid #ccc;
   }
   
   .intro-quiz {
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
   }
   
   .txt-intro-quiz {
@@ -239,9 +245,8 @@
   background-color: var(--color-sandstorm);
   border-radius: 0.6vw;
   border: none;
-  padding: 1vw 1.5vw;
-  text-align: center;
-  font-size: 1.2vw;
+  padding: 1vw 1.4vw;
+  font-size: 1vw;
   font-weight: bold;
   transition-duration: 0.4s;
   }
@@ -254,12 +259,18 @@
   );
   }
   
+  .img-sobre{
+    text-align: center;
+  }
   .mais-sobre {
   text-align: center;
   border: 1px solid #ccc;
   padding: 1vw;
   }
 
+  .ft-sobre {
+    width: 20vw;
+  }
   .conteudo-sonia {
   color: #03080e;
   }
@@ -275,9 +286,9 @@
     color: #ffffff;
     padding: 10px;
     margin-top: 20px;
-    position: relative;
     width: 100%;
     z-index: 1;
+    position: relative;
   }
   
   footer ul {
@@ -295,8 +306,8 @@
     float: right;
   }
 
-/*   page quiz
- */
+/*PAGE QUIZ*/
+
   .home-quiz {
     font-weight: bold;
     padding: 0.5vw;
@@ -314,26 +325,6 @@
   .nav-quiz {
       padding: 1vw;
     }
-
-  
-  .btn-quiz {
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 1rem;
-  color: var(--color-floral-white);
-  padding: 0.8rem 1rem;
-  background: var(--color-sandstorm);
-  border-radius: 2rem;
-  border: none;
-  }
-  
-  .btn-quiz:hover {
-  background: linear-gradient(
-  90deg,
-  rgb(224, 244, 5) 0%,
-  rgb(182, 245, 8) 100%
-  );
-  }
   
   .img-quiz {
   max-width: 100%;
@@ -342,7 +333,7 @@
   align-items: center;
   }
   
-  .intro-quiz {
+  .inicio-quiz {
     padding: 2vw;
     display: flex;
     align-items: center;
@@ -357,46 +348,111 @@
     gap: 1.5vw;
   }
 
-  #quiz {
+  .quiz {
   padding: 2vw;
-  max-width: 70vw;
+  max-width: 80vw;
   min-height: auto;
   align-items: center;
   justify-content: center;
   border: 1px solid #ccc;
   border-radius: 1vw;
   margin: 0 auto;  
-  width: 100%;
   text-align: center;
   }
+
+  .btn-resposta {
+    background-color: #ffffff;
+    color: #222;
+    font-weight: 530;
+    width: 100%;
+    border: 1px solid rgb(28, 28, 9);
+    padding: 1vw;
+    margin: 0.6vw 0;
+    text-align: left;
+    border-radius: 0.4vw;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .btn-resposta:hover:not([disabled]){
+    background: var(--color-sandstorm);
+    color: #ffffff;
+  }
+
+  .btn-resposta:disabled{
+    cursor: no-drop;
+  }
+
+  #prox-next {
+    background: var(--color-pomb-and-power);
+    color: #ffffff;
+    font-weight: 530;
+    border: 0;
+    padding: 0.7rem 1.3rem;
+    margin: 1.2vw auto 0;
+    border-radius: 0.4vw;
+    cursor: pointer;
+    display: none;
+  }
+
+  .btn-quiz {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--color-floral-white);
+    padding: 0.8rem 1rem;
+    background: var(--color-pomb-and-power);
+    border-radius: 2rem;
+    border: none;
+    }
+    
+    .btn-quiz:hover {
+    background: linear-gradient(
+    90deg,
+    rgb(174, 190, 5) 0%,
+    rgb(106, 143, 4) 100%
+    );
+    }
+
+  .correta{
+      background-color: var(--color-pomb-and-power);
+    }
+
+  .incorreta{
+      background-color: #E72500;
+    }
 
   .pag-end {
     text-align: center;
     margin-top: 2vw;
   }
-  
+
   @media (max-width: 768px) {
-  .img-carousel,
-  .img-perfil,
-  .img-intro-quiz,
-  .video-perfil {
-  width: 100%;
-  height: auto;
-  }
-  
-  .section-quiz {
-  flex-direction: column-reverse;
-  }
-  
-  .perfil {
-  flex-direction: column;
-  }
-  
-  .mais-sobre {
-  flex-direction: column;
-  }
-  
-  .card {
-  flex-direction: column;
-  }
+    .img-carousel,
+    .img-perfil,
+    .img-intro-quiz,
+    .img-arte,
+    .ft-sobre,
+    .img-arte,
+    .section-quiz,
+    .video-perfil {
+    width: 100%;
+    height: auto;
+    }
+    
+    .video{
+      width: 100%;
+      height: 100%;
+    }
+    .section-quiz {
+    flex-direction: column-reverse;
+    }
+    
+    .perfil {
+    flex-direction: column;
+    }
+    
+    .mais-sobre {
+    flex-direction: column;
+    }
   }
